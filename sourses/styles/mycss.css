@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    font-family: Montserrat,Verdana;
+    background-color:#CDCDCD;
+    padding-top: 56px
+}
+
+p{
+    color: rgb(55, 57, 57) ;;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: #CDCDCD;
+}
+
+.collapse.navbar-collapse {
+    justify-content: end;
+}
+
+.nav-link{
+    color: rgb(0, 0, 0);
+}
+
+.navbar-nav .nav-link.active.nav-link.active {
+    color: #82705F;
+}
+
+
+.logo {
+    width: 40px;
+    height: 30px;
+}
+
+.logo2 {
+    width: 150px;
+    height: 30px;
+}
+
+.image-blash {
+    float: right;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.image-blash>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-blash>div>img {
+    width: 300px;
+}
+
+.image-blash>div>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-blash>div>div>img {
+    width: 300px;
+}
+
+.sidebar {
+    color:rgb(55, 57, 57) ;
+    background: linear-gradient( 270deg, #236471 0%, #ffffff 100%);
+}   
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #CDCDCD; ;
+    border-style: none;
+}   
+
+.card a {
+    text-decoration: none;
+    color: rgb(55, 57, 57) ;
+    
+}
+
+.card>a>img{
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Стандартная тень */
+    transition: box-shadow 0.3s ease; /* Плавный переход для тени */
+}   
+
+.card>a>img:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 0, 0.5);
+}
+
+.btn {
+    border-color: black;
+    background-color: #CDCDCD;
+}
+
+.btn:hover {
+    background-color: #82705F;
+}
+
+#card-2 {
+    margin-top: 30px;
+}
+
+.slide-text,
+.footer-text {
+    color: rgb(55, 57, 57);
+    margin:auto auto;
+}
+
+footer .container {
+    width: 100%;
+    background-color: #CDCDCD;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
