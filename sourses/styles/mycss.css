@@ -118,8 +118,13 @@ p{
     margin:auto auto;
 }
 
+footer {
+    padding: 0 !important;
+
+}
 footer .container {
     width: 100%;
+    max-width: 100%;
     background-color: #CDCDCD;
 }
 
