@@ -6,8 +6,12 @@ body {
     padding-top: 56px
 }
 
+section {
+    margin: 5% 5% 0 5%;
+}
+
 p{
-    color: rgb(55, 57, 57) ;;
+    color: rgb(55, 57, 57) ;
 }
 
 .navbar {
@@ -33,13 +37,8 @@ p{
 
 
 .logo {
-    width: 40px;
-    height: 30px;
-}
-
-.logo2 {
     width: 150px;
-    height: 30px;
+    height: 35px;
 }
 
 .image-blash {
@@ -73,29 +72,43 @@ p{
     background: linear-gradient( 270deg, #236471 0%, #ffffff 100%);
 }   
 
+
 .row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.row-1 {
     display: flex;
     justify-content: center;
 }
 
-.card {
+.card, .card-1 {
     background-color: #CDCDCD; ;
     border-style: none;
+    margin-right: 10%
 }   
 
-.card a {
+.card-1{
+    margin-right: 10%;
+    width: 100%;
+}
+
+.card a, .card-1 a {
     text-decoration: none;
     color: rgb(55, 57, 57) ;
     
 }
 
-.card>a>img{
-    border-radius: 100px;
+
+.card>img, .card-1>a>img{
+    border-radius: 150px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Стандартная тень */
     transition: box-shadow 0.3s ease; /* Плавный переход для тени */
 }   
 
-.card>a>img:hover{
+.card>img:hover, .card-1>a>img:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 0, 0.5);
 }
 
@@ -118,10 +131,8 @@ p{
     margin:auto auto;
 }
 
-footer {
-    padding: 0 !important;
 
-}
+
 footer .container {
     width: 100%;
     max-width: 100%;
